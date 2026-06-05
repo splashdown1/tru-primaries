@@ -1,0 +1,20 @@
+{
+  "name": "tru-sdk",
+  "version": "0.1.0",
+  "description": "TRU (Truth Recursive Unit) Python SDK",
+  "main": "tru.py",
+  "scripts": {
+    "test": "python -m pytest tests/"
+  },
+  "keywords": ["ai", "truth", "verification", "hallucination", "primaries"],
+  "author": "splashdown1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/splashdown1/tru-primaries"
+  },
+  "python_requires": ">=3.8",
+  "dependencies": {
+    "requests": ">=2.28.0"
+  }
+}

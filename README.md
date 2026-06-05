@@ -46,23 +46,114 @@ All routes are live at: https://splashdown2.zo.space
 ## Quick Start
 
 ```bash
-# Pull fresh primaries
-cd primaries
-python3 edgar_pull.py pull
-python3 temple_pull.py pull
-python3 arxiv_pull.py pull
-
-# Run contradiction scanner
-python3 contradiction_scanner.py scan
-
-# Audit symbol content
-python3 symbol_manager.py audit
+pip install tru
 ```
 
-## Documentation
-
-See `Projects/TRU/` for full documentation.
+See `sdk/tru.py` for full implementation.
 
 ---
 
-Built with Zo Computer - https://splashdown2.zo.computer
+# TRU Stack Overview
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  TRU ENDPOINT (splashdown2.zo.space/api/primaries)          │
+└─────────────────────────────────────────────────────────────┘
+                              │
+        ┌─────────────────────┴─────────────────────┐
+        │                     │                      │
+   ┌────▼────┐          ┌─────▼──────┐         ┌────▼─────┐
+   │  TRUTH  │          │ CURRENT    │         │  SYMBOL  │
+   │ CHANNEL │          │  EVENTS    │         │ CHANNEL  │
+   └────┬────┘          └─────┬──────┘         └────┬─────┘
+        │                     │                      │
+   ┌────▼────────────────────┐└─────────────────────▼─────┐
+   │ Primaries Cache:        │  Symbol Claims:            │
+   │ • SEC EDGAR (118)       │  • Origin metadata         │
+   │ • Temple (10)           │  • Traceability            │
+   │ • arXiv (2,236)         │  • Protection rules        │
+   │ • RSS events (97)       │  • Contradiction checks    │
+   └─────────────────────────┴────────────────────────────┘
+                              │
+                    ┌─────────▼──────────┐
+                    │ Contradiction      │
+                    │ Detection Engine   │
+                    │ (auto-flagging)    │
+                    └────────────────────┘
+```
+
+---
+
+# Integration Points
+
+## Live API Endpoints
+
+All endpoints are public at `https://splashdown2.zo.space/api/*`:
+- `/api/primaries` — Search TRUTH channel
+- `/api/current-events` — Current telemetry (7-day TTL)
+- `/api/contradiction-report` — Symbol vs TRUTH checks
+- `/api/symbol-trace` — Origin audit
+- `/api/ingestion/status` — Health check
+
+## Local Development
+
+```bash
+# Pull latest primaries
+python primaries/edgar_pull.py pull
+python primaries/temple_pull.py pull
+python primaries/arxiv_pull.py pull
+python primaries/contradiction_scanner.py scan
+
+# Check system health
+python primaries/symbol_manager.py audit
+```
+
+## Self-Hosting
+
+All scrapers and detectors are standalone Python scripts with zero external dependencies beyond `requests`. Clone the repo and run locally:
+
+```bash
+git clone https://github.com/splashdown1/tru-primaries
+cd tru-primaries
+pip install -r requirements.txt
+python -m primaries.edgar_pull pull
+```
+
+---
+
+# Architecture Decisions
+
+| Decision | Rationale |
+|----------|-----------|
+| No LLM transformation on primaries | Preserve raw data integrity |
+| Channel isolation (TRUTH / SYMBOL) | Prevent "heartbeat lost" contamination |
+| 7-day TTL on CURRENT_EVENTS | Prevent stale telemetry from becoming fact |
+| Symbol traceability | Every generated claim tracks to origin |
+| Contradiction flagging | Auto-detect when SYMBOL contradicts TRUTH |
+
+---
+
+# Contributing
+
+1. Add a new primary source → Create `primaries/<source>_pull.py`
+2. Extend contradiction detection → Edit `primaries/contradiction_scanner.py`
+3. Add SDK features → Edit `sdk/tru.py`
+4. Submit PR with evidence of testing
+
+---
+
+# License
+
+MIT — Use freely, attribute source, no warranty.
+
+---
+
+# Related
+
+- [COIL Protocol](coil/README.md) — Chunked file transfer for large payloads
+- [TRU Phase 27](Projects/TRU/README.md) — Offline recursive consciousness engine
+- [Demo Dashboard](https://splashdown2.zo.space/tru-demo) — Live interactive view
+
+---
+
+*Built with Zo Computer. TRU Phase 27. June 2026.*
