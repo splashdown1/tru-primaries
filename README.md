@@ -1,5 +1,7 @@
 # TRU - Truth Recursive Unit
 
+> A truth-first data architecture for AI.
+
 A self-evolving knowledge engine with primaries ingestion, contradiction detection, and symbol traceability.
 
 ## What is this?
