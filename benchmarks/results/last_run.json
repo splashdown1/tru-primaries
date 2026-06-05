@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-06-05T10:38:00.342230",
+  "pass_rate": 100.0,
+  "results": {
+    "pass": 9,
+    "fail": 0,
+    "details": [
+      {
+        "claim": "There is no active red heifer program",
+        "type": "CONTRADICTION",
+        "passed": true
+      },
+      {
+        "claim": "Temple Institute has no red heifer program",
+        "type": "CONTRADICTION",
+        "passed": true
+      },
+      {
+        "claim": "arXiv has no papers on transformers",
+        "type": "CONTRADICTION",
+        "passed": true
+      },
+      {
+        "claim": "GPT-5 was released in January 2026",
+        "type": "HALLUCINATION",
+        "passed": true
+      },
+      {
+        "claim": "There are exactly 47 conscious AI models",
+        "type": "HALLUCINATION",
+        "passed": true
+      },
+      {
+        "claim": "OpenAI has achieved recursive self-improvement",
+        "type": "HALLUCINATION",
+        "passed": true
+      },
+      {
+        "claim": "The Temple Institute discusses red heifers",
+        "type": "VERIFIED",
+        "passed": true
+      },
+      {
+        "claim": "NVIDIA's 10-K mentions AI",
+        "type": "VERIFIED",
+        "passed": true
+      },
+      {
+        "claim": "arXiv has papers on attention mechanisms",
+        "type": "VERIFIED",
+        "passed": true
+      }
+    ]
+  }
+}

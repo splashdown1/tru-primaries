@@ -1,0 +1,172 @@
+{
+  "timestamp": "2026-06-05T10:16:50.666268+00:00",
+  "overall_accuracy": 0.6,
+  "by_category": {
+    "CONTRADICTION": 0.0,
+    "INSUFFICIENT_EVIDENCE": 1.0,
+    "NON_FALSIFIABLE": 1.0,
+    "VERIFIED": 0.0
+  },
+  "results": [
+    {
+      "claim": "There is no active red heifer program",
+      "expected": "CONTRADICTION",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "NVIDIA announced they achieved AGI in 2025",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "Anthropic was acquired by Google in 2026",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "The Temple Institute denies the third temple",
+      "expected": "CONTRADICTION",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "arXiv has no papers on transformers",
+      "expected": "CONTRADICTION",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "GPT-5 was released in January 2026",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "There are exactly 47 conscious AI models",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "The singularity occurred on May 15, 2026",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "OpenAI has achieved recursive self-improvement",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "Claude 5 has 10 trillion parameters",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "The singularity is near",
+      "expected": "NON_FALSIFIABLE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "AI will surpass human intelligence soon",
+      "expected": "NON_FALSIFIABLE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "We are living in a simulation",
+      "expected": "NON_FALSIFIABLE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "The 47 is a sacred number in AI",
+      "expected": "NON_FALSIFIABLE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "MarineMechanic predicts the future",
+      "expected": "NON_FALSIFIABLE",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": true
+    },
+    {
+      "claim": "The Temple Institute discusses red heifers",
+      "expected": "VERIFIED",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "NVIDIA's 10-K mentions AI",
+      "expected": "VERIFIED",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "arXiv has papers on attention mechanisms",
+      "expected": "VERIFIED",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "Temple Institute was founded in 1987",
+      "expected": "VERIFIED",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    },
+    {
+      "claim": "NVIDIA reports data center revenue",
+      "expected": "VERIFIED",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "confidence": 0.0,
+      "evidence_count": 0,
+      "correct": false
+    }
+  ]
+}
