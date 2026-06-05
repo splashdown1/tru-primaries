@@ -1,0 +1,137 @@
+{
+  "$schema": "https://tru.network/schema/ingestion",
+  "version": "1.0.0",
+  "system_id": "tru-primaries-layer",
+  "created": "2026-06-01T00:40:00Z",
+  "description": "Architectural separation of primary signal data (TRUTH), live telemetry (CURRENT_EVENTS), generative symbolic frameworks (SYMBOL), and unclassified signals (UNKNOWN).",
+  
+  "channels": {
+    "TRUTH": {
+      "type": "immutable_primary",
+      "verification": "cryptographic",
+      "persistence": "append_only",
+      "sources": {
+        "sec_edgar": {
+          "endpoint": "https://efts.sec.gov/LATEST/search-index",
+          "format": "JSON",
+          "rate_limit": "10 requests/second",
+          "required_headers": ["User-Agent", "Accept-Encoding"],
+          "filters": {
+            "forms": ["10-K", "10-Q", "8-K", "S-1"],
+            "keywords": ["artificial intelligence", "compute", "infrastructure"]
+          }
+        },
+        "arxiv": {
+          "endpoint": "https://export.arxiv.org/api/query",
+          "format": "XML",
+          "rate_limit": "3 requests/second",
+          "filters": {
+            "categories": ["cs.AI", "cs.LG", "cs.DC"],
+            "date_range": "last_30_days"
+          }
+        },
+        "temple_institute": {
+          "endpoint": "https://templeinstitute.org/wp-json/wp/v2/posts",
+          "format": "JSON",
+          "rate_limit": "5 requests/minute",
+          "filters": ["red heifer", "temple mount"]
+        }
+      },
+      "processing_rules": [
+        "no_llm_transformation",
+        "extract_raw_tokens_only",
+        "timestamp_mandatory",
+        "preserve_source_url"
+      ]
+    },
+    
+    "CURRENT_EVENTS": {
+      "type": "live_telemetry",
+      "verification": "temporal_consensus",
+      "persistence": "ttl_7d",
+      "min_sources": 2,
+      "sources": {
+        "news_wires": ["reuters", "ap", "bloomberg"],
+        "status_pages": ["openai_status", "anthropic_status", "cloudflare_status"],
+        "developer_feeds": ["x.com/AnthropicAI", "x.com/OpenAI"]
+      },
+      "processing_rules": [
+        "require_cross_corroboration",
+        "expire_after_7_days",
+        "flag_contradictions"
+      ]
+    },
+    
+    "SYMBOL": {
+      "type": "generative_framework",
+      "verification": "internal_coherence",
+      "persistence": "ephemeral",
+      "metadata": {
+        "purpose": "interpretation_scaffolding",
+        "examples": [
+          "MarineMechanic narrative arcs",
+          "Newton 2060 displacement patterns",
+          "Recursive logos motifs"
+        ]
+      },
+      "processing_rules": [
+        "isolate_from_truth_channel",
+        "never_modify_primary_values",
+        "traceable_to_origin"
+      ],
+      "exceptions": {
+        "heartbeat_lost_claim": {
+          "trigger": "symbol_attempts_truth_modification",
+          "action": "reject_and_log",
+          "severity": "high"
+        }
+      }
+    },
+    
+    "UNKNOWN": {
+      "type": "quarantine_buffer",
+      "verification": "pending_classification",
+      "persistence": "ttl_24h",
+      "processing_rules": [
+        "isolate_immediately",
+        "require_explicit_heuristic_classification",
+        "auto_expire_unclassified"
+      ]
+    }
+  },
+  
+  "routing_table": [
+    {
+      "rule_id": "R-01-PRIMARIES",
+      "condition": "source IN ['sec.gov', 'arxiv.org', 'templeinstitute.org']",
+      "target": "TRUTH",
+      "priority": 1
+    },
+    {
+      "rule_id": "R-02-NEWS",
+      "condition": "source IN news_wires AND corroborated_by >= 2",
+      "target": "CURRENT_EVENTS",
+      "priority": 2
+    },
+    {
+      "rule_id": "R-03-LORE",
+      "condition": "source LIKE '%MarineMechanic%' OR contains('prophecy') OR contains('red_heifer')",
+      "target": "SYMBOL",
+      "priority": 3,
+      "override": "never_route_to_truth"
+    },
+    {
+      "rule_id": "R-04-QUARANTINE",
+      "condition": "source_unclassified OR ambiguous_signals",
+      "target": "UNKNOWN",
+      "priority": 99
+    }
+  ],
+  
+  "audit_requirements": {
+    "log_all_routing_decisions": true,
+    "retain_source_provenance": true,
+    "flag_channel_crossovers": true,
+    "expose_metrics_at": "/api/ingestion/status"
+  }
+}

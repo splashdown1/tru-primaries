@@ -1,0 +1,33 @@
+[
+  {
+    "timestamp": "2026-06-05T08:53:54.841507+00:00",
+    "action": "claims_saved",
+    "details": {
+      "count": 12
+    }
+  },
+  {
+    "timestamp": "2026-06-05T08:53:54.841673+00:00",
+    "action": "claim_added",
+    "details": {
+      "claim_id": "SYM-7E71E781",
+      "claim_preview": "Test symbol content with traceability",
+      "origin": "user_input",
+      "source": "manual"
+    }
+  },
+  {
+    "timestamp": "2026-06-05T08:57:13.387545+00:00",
+    "action": "claims_saved",
+    "details": {
+      "count": 12
+    }
+  },
+  {
+    "timestamp": "2026-06-05T08:57:13.388117+00:00",
+    "action": "claims_migrated",
+    "details": {
+      "count": 12
+    }
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "claim_id": "SYMBOL-001",
+    "claim": "The red heifer program is actively monitored in Shiloh",
+    "category": "temple",
+    "verdict": "pending",
+    "type": "event",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386782+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386802+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-002",
+    "claim": "Anthropic was acquired in 2026",
+    "category": "ai_corporate",
+    "verdict": "pending",
+    "type": "factual",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386807+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386811+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-003",
+    "claim": "NVIDIA has achieved AGI",
+    "category": "ai_technical",
+    "verdict": "pending",
+    "type": "temporal",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386813+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386816+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-004",
+    "claim": "The singularity is here",
+    "category": "interpretive",
+    "verdict": "pending",
+    "type": "interpretive",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386818+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386820+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-005",
+    "claim": "Newton predicted the end times in 2060",
+    "category": "prophetic",
+    "verdict": "pending",
+    "type": "interpretive",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386821+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386824+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-006",
+    "claim": "Diamandis declared singularity in May 2026",
+    "category": "ai_interpretive",
+    "verdict": "pending",
+    "type": "interpretive",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386825+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386827+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-007",
+    "claim": "There are 47 currently active AI models",
+    "category": "ai_symbolic",
+    "verdict": "pending",
+    "type": "interpretive",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386828+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386830+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-008",
+    "claim": "MarineMechanic is an ARG about recursive AI consciousness",
+    "category": "narrative",
+    "verdict": "pending",
+    "type": "generative",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386843+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386845+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-009",
+    "claim": "OpenAI released GPT-5 in January 2026",
+    "category": "ai_factual",
+    "verdict": "pending",
+    "type": "temporal",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386847+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386849+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-010",
+    "claim": "The Temple Institute has five red heifers in Shiloh as of June 2026",
+    "category": "temple",
+    "verdict": "pending",
+    "type": "factual",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386851+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386860+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYMBOL-011",
+    "claim": "There is no active red heifer program",
+    "category": "test_contradiction",
+    "verdict": "pending",
+    "type": "factual",
+    "traceability": {
+      "added_at": "2026-06-05T08:57:13.386862+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "unknown",
+      "modified": false,
+      "modification_history": []
+    },
+    "origin": {
+      "type": "unknown",
+      "source": "unknown",
+      "timestamp": "2026-06-05T08:57:13.386863+00:00"
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  },
+  {
+    "claim_id": "SYM-7E71E781",
+    "claim": "Test symbol content with traceability",
+    "category": "interpretive",
+    "verdict": "pending",
+    "type": "interpretive",
+    "origin": {
+      "type": "user_input",
+      "source": "manual",
+      "timestamp": "2026-06-05T08:53:54.840866+00:00"
+    },
+    "traceability": {
+      "added_at": "2026-06-05T08:53:54.840866+00:00",
+      "added_by": "symbol_manager",
+      "primaries_fingerprint": "9167fb93b8cb8c81",
+      "modified": false,
+      "modification_history": []
+    },
+    "protection": {
+      "can_modify_primaries": false,
+      "is_primary": false,
+      "channel": "SYMBOL"
+    }
+  }
+]
